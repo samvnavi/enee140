@@ -1,0 +1,76 @@
+#include<stdio.h>
+
+int
+main()
+{ printf("Friday \nFeb. 10, 2010\n");
+  return 0;
+}
+//bugs: no hash before include, there shpuld be no space after include 
+//no 'i' in main, space between print and f, quotations placed incorrectly
+
+#include <stdio.h>
+
+int main()
+{ printf("Friday \nFeb. 10,  2015\n");
+  return 0;
+}
+//bugs: n print instead of printf, quotes not there, comma instead of semi colon
+
+#include<stdio.h>
+int main() { 
+printf("Friday /n");
+printf("Feb. 10, 2015/n");
+return 0;}
+
+//no stdio library
+//no main function
+
+#include <stdio.h>
+
+int
+Main()
+{ Printf("Friday \n");
+  Printf("Feb 10, 2015\n");
+  return 0;
+}
+// include is in capital
+//int is in capital
+//Return is in capital
+
+# include <stdio.h>
+
+int
+main ()
+{ printf("Friday /n");
+  printf("Feb. 10, 2015/n");
+  return 0;
+}
+//int is in caital 
+//there is no colon after printf
+
+#include <stdio.h>
+
+int
+main()
+{
+    int i = 0;
+
+    for (i=1; i<10; i++) {
+        printf("%4d", i);
+        if (i==10) {
+            // Hint: run the program in the debugger,
+            // to see when this line is executed.
+            printf("\n");
+        }
+    }
+
+    for (i=1; i<10; i++) {
+        printf("%4d", i*i);
+        if (i==10) {
+            printf("\n");
+        }
+    }
+
+    return 0;}
+// curly brackets not placed correctly
+//line is executed when i = 10

@@ -1,0 +1,24 @@
+1)
+sizeof(int) = 4
+sizeof(double) = 8
+sizeof(167) = 4
+sizeof(float) = 4
+sizeof(char) = 1
+sizeof(3.1415926) = 8
+sizeof('$') = 1
+sizeof(1LU) = 8
+
+2)
+int_result = a * f;
+--Implicit: a to float, result to int
+real_result = a * f;
+--Implicit: a to float
+real_result = (float) a * b;
+--Explicit: (float) a
+d = a + b / a * f;
+--Implicit: b to float, multiplication to float, result to double
+d = f * b / a + a;
+--Implicit: b to float, multiplication to float, division to double, addition to double
+
+3)b) truncate the integer part
+4)b) truncate the integer part

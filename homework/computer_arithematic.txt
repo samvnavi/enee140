@@ -1,0 +1,23 @@
+ int a = 1;
+ int b = 3;
+ float c = 1;
+ float d = 2;
+ int e = 4;
+
+ float  r1 = c / d;
+ answer:  0.5 , since a float divided by a float gives a float and r1 is also a float
+ float r2 = a / (int)d;
+ answer: 0.0 , since an int by an int gives an int and truncates the rest of the decimals, the float converts 0 to 0.0
+ int   r3 = a % b;
+ answer: 1 as the remainder when 1 is divided by 3 is one
+ unsigned r4 = UINT_MAX % 2;
+ answer: 1 since the formula for uint_max is given by 2^w - 1, hence the remained will be one
+ int  r5 = UINT_MAX‐ 1;
+ answer: 2^w -2(for grace system w = 32), as the formula for uint_max is 2^w - 1
+ int  r6 = e++;
+ answer: 4, since e++ happens after the assignment of the variable r6.
+ int  r7 = (a+0.2) / b;
+ answer: 0, though the expression gives out the value 0.4 , the assignment of r7 to an int datatype truncates the entire decimal
+ int  r8 = 2.0*a / (c‐d);
+ answer: -2, the expression gives -2.0 however the assignment of the r8 to an int datatype makes it -2.
+

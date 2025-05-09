@@ -1,0 +1,31 @@
+ printf("%12d \n%12f \n %012d\n",23,3.1416,‐23);
+ output:
+           23 
+    3.141600 
+ -00000000023
+
+ printf("%012d \n%*d \n%0*d \n",‐23, 12,23, 12,23);
+ output:
+ -00000000023 
+          23 
+000000000023 
+
+ printf("%5.2f \n%.2f \n", 3.14159, 3.14159);
+ output:
+  3.14 
+3.14 
+
+ printf("%*.*f \n", 5, 3, 3.14159);
+ output:
+ 3.142 
+
+
+ printf("%5.2d \n%10.5s\n", 1, "Hello, World!");
+ output:
+    01 
+     Hello
+
+
+ printf("%‐15ftest \n%+ftest \n% ftest\n", 3.1416, 3.1416, 3.1416);
+ output:
+ error
